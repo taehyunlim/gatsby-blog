@@ -48,7 +48,7 @@ const Main = (props) => (
               </div>
               <div style={{ flex: 1 }}>
                 <Sidebar
-                  title="ecomuix"
+                  title={props.siteTitle}
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 />
                 <Sidebar
