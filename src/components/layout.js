@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
             height: "100%",
             padding: "1.0875rem"
           }}>
-          <Media query={{ maxWidth: 848 }}>
+          <Media query={{ maxWidth: 980 }}>
             {matches =>
               matches ? (
                 <>
