@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal Blog`,
+    title: `ecomuix`,
     description: `Based on the Gatsby Default Starter repo`,
     author: `@taehyunlim`
   },
