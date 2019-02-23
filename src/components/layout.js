@@ -20,9 +20,9 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', border: '5px solid #414141' }}>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <main
           style={{
             margin: "0 auto",
             maxWidth: 980,
@@ -49,7 +49,7 @@ const Layout = ({ children }) => (
                       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     />
                     <Sidebar
-                      title="About tldev"
+                      title="about author"
                       description="Excepteur sint occaecat cupidatat non proident, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
                   </div>
@@ -69,25 +69,28 @@ const Layout = ({ children }) => (
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       />
                       <Sidebar
-                        title="About tldev"
+                        title="about author"
                         description="Excepteur sint occaecat cupidatat non proident, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                       />
                     </div>
                   </div>
                 )}
           </Media>
-          <footer
-            style={{
-              display: "flex",
-              flex: 1,
-              flexDirection: "row",
-              justifyContent: "flex-end"
-            }}
-          >
-            tldev © {new Date().getFullYear()}
-          </footer>
-        </div>
-      </>
+        </main>
+        <footer
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            width: "100%",
+            maxWidth: "980px",
+            margin: "0 auto",
+            padding: "1rem",
+            fontSize: "13px"
+          }}
+        >
+          tldev © {new Date().getFullYear()}
+        </footer>
+      </div>
     )}
   />
 )
