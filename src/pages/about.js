@@ -9,7 +9,7 @@ const SecondPage = () => (
     <SEO title="About Author" />
     <h1>About Author</h1>
     <p>This is the about page.</p>
-    <Link to="/">Go back to the homepage</Link>
+    Contact: <code style={{ fontSize: '11px', marginLeft: '10px', padding: '0 5px', verticalAlign: 'middle' }}> taehyun (dot) lim (at) gmail </code>
   </Layout>
 )
 
